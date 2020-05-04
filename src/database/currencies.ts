@@ -38,7 +38,7 @@ export const EnabledCurrencies = [
 
 export default async function connect() {
     IPFSconnector.setConfig({
-        repo: "feeder",
+        repo: "explroerAPI",
         config: {
             Addresses: {
                 Swarm: [

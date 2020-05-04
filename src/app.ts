@@ -17,7 +17,8 @@ app.set("port", process.env.PORT || 3000);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/block", blockController.getBlocks);
+app.get("/:curr/block", blockController.getBlocks);
+app.post("/:curr/block", blockController.getBlocks);
 
 
 connect();
